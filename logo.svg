@@ -1,0 +1,5 @@
+
+    <svg height="500" width="500">
+    <rect width="200" height="200" fill="pink"/>
+    <text x="0" y="0" fill="black">dani</text>
+  </svg>
