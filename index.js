@@ -26,13 +26,18 @@ inquirer
         name: 'text',
       },
   ])
-  .then((response) =>
+  .then((response) => {
   let shape;
   if (response.shape==="square"){
     shape = new Square()
+  } else if (response.shape === "circle"){
+    shape = new Circle()
+  } else {
+    shape = new Triangle()
   }
     const template=`
     <svg height="500" width="500">
+    ${shape}
     <text x="0" y="0" fill="${response.textcolor}">${response.text}</text>
   </svg>`
-  );
+});
