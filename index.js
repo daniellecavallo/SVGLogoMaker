@@ -27,7 +27,12 @@ inquirer
       },
   ])
   .then((response) =>
-    response.confirm === response.password
-      ? console.log('Success!')
-      : console.log('You forgot your password already?!')
+  let shape;
+  if (response.shape==="square"){
+    shape = new Square()
+  }
+    const template=`
+    <svg height="500" width="500">
+    <text x="0" y="0" fill="${response.textcolor}">${response.text}</text>
+  </svg>`
   );
