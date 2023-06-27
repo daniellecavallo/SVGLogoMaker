@@ -39,7 +39,7 @@ inquirer
     const template=`
     <svg height="500" width="500">
     ${shape.render()}
-    <text x="0" y="0" fill="${response.textcolor}">${response.text}</text>
+    <text x="0" y="15" fill="${response.textcolor}">${response.text}</text>
   </svg>`
   fs.writeFile('logo.svg', template, (err) =>
   err ? console.error(err) : console.log('Success!')
